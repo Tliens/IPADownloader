@@ -6,6 +6,8 @@ IPADownloader 让下载ipa变得更加方便。
 
 感谢大神，站在大神的肩膀上：https://github.com/majd/ipatool
 
+喜欢请右上角star✨✨
+
 ![img](https://github.com/Tliens/IPADownloader/blob/master/icon_0.jpg)
 
 
@@ -67,3 +69,22 @@ com.von.TPlan
 ==> ℹ️	[Info] Done.
 --->>> 👍 下载完毕
   ```
+### 我的其他开源框架
+
+- [SpeedySwift 独立开发者必备](https://github.com/Tliens/SpeedySwift)
+
+- [CTNet 这是一个可以指定缓存、重试、优先级的轻量级网络库](https://github.com/ours-curiosity/CTNet)
+
+- [Localizable 国际化方案](https://github.com/Tliens/Localizable)
+
+- [SpeedyMetal Metal 加速框架，GPUImage3的尝试演化](https://github.com/Tliens/SpeedyMetal)
+
+- [GPUImageByMetal  GPUImage 3 中文注释版](https://github.com/Tliens/GPUImageByMetal)
+
+### Author
+
+tliens, maninios@163.com
+
+## License
+
+KillBug is available under the MIT license. See the LICENSE file for more info.
