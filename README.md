@@ -1,6 +1,13 @@
 
 
-IPADownloader 让下载ipa变得更加方便，
+IPADownloader 让下载ipa变得更加方便。
+
+此脚本，一键下载，减少逆向学习脑细胞的损耗。
+
+感谢大神，站在大神的肩膀上：https://github.com/majd/ipatool
+
+![img](https://github.com/Tliens/IPADownloader/blob/master/icon_0.jpg)
+
 
 ### 使用流程 
 1、先执行./setup.sh 安装环境（仅需执行一些）
@@ -38,3 +45,25 @@ OPTIONS:
   --log-level <log-level> (default: info)
   --version               Show the version.
   -h, --help              Show help information.
+### 实操日志：
+  ```
+  ➜  IPADownloader git:(master) ./downloader.sh
+--->>> 👉️ 输入搜索名称,如：今日计划-极简青春
+今日计划-极简青春
+==> ℹ️	[Info] Searching for '今日计划-极简青春'...
+==> ℹ️	[Info] Found 1 result:
+1. 今日计划-极简青春: com.von.TPlan (2.1).
+--->>> 👉️ 输入bundle id，如： com.von.TPlan
+com.von.TPlan
+==> ℹ️	[Info] Querying the iTunes Store for 'com.von.TPlan'...
+==> ⚠️	[Warning] Enter Apple ID email:
+==> ⚠️	[Warning] Enter Apple ID password:
+==> ℹ️	[Info] Authenticating with the App Store...
+==> ℹ️	[Info] Authenticated as 'Quinn Von'.
+==> ℹ️	[Info] Requesting a signed copy of '1505020317' from the App Store...
+==> ℹ️	[Info] Downloading app package... [100%]
+==> ℹ️	[Info] Saved app package to com.von.TPlan_1505020317_v2.1_529.ipa.
+==> ℹ️	[Info] Applying patches...
+==> ℹ️	[Info] Done.
+--->>> 👍 下载完毕
+  ```
