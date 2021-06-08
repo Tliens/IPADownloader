@@ -16,18 +16,19 @@
 
 
 ### 使用流程 
-1、先执行./setup.sh 安装环境（仅需执行一些）
-2、执行./downloader.sh 下载
+- 1、先执行./setup.sh 安装环境（仅需执行一次）
+- 2、执行./downloader.sh 下载
 
 ### 注意事项
-1.如果遇到权限问题 chmod +x *.sh
-2.如果下载失败，请更换Apple ID，可能当前账号不支持下载该App
-3.如果不想一直输入账号密码，修改如下：
+- 1.如果遇到权限问题 chmod +x *.sh
+- 2.如果下载失败，请更换Apple ID，可能当前账号不支持下载该App
+- 3.如果不想一直输入账号密码，修改如下：
 
 ```
 /usr/local/bin/ipatool download -e XXX@163.com -p XXXXXXXX -b $bundleid
 ```
 OVERVIEW: Download (encrypted) iOS app packages from the App Store.
+
 ### shell 脚本内容
 ```
 echo "--->>> 👉️ 输入搜索名称,如：今日计划-极简青春"
@@ -39,10 +40,10 @@ read bundleid
 echo "--->>> 👍 下载完毕"
 ```
 ### 其他用法
-
+```
 USAGE: ipatool download --bundle-identifier <bundle-identifier> [--email <email>] [--password <password>] [--log-level <log-level>]
-
-OPTIONS:
+```
+- OPTIONS:
   - -b, --bundle-identifier <bundle-identifier>
       - The bundle identifier of the target iOS app. 
   - -e, --email <email>     
