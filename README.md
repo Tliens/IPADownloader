@@ -8,6 +8,10 @@ IPADownloader 让下载ipa变得更加方便。
 
 喜欢请右上角star✨✨
 
+如果下载失败，更换apple id
+
+如果搜不到，请修改脚本中的 --limit 20
+
 ![img](https://github.com/Tliens/IPADownloader/blob/master/icon_0.jpg)
 
 
@@ -39,14 +43,15 @@ echo "--->>> 👍 下载完毕"
 USAGE: ipatool download --bundle-identifier <bundle-identifier> [--email <email>] [--password <password>] [--log-level <log-level>]
 
 OPTIONS:
-  -b, --bundle-identifier <bundle-identifier>
-                          The bundle identifier of the target iOS app. 
-  -e, --email <email>     The email address for the Apple ID. 
-  -p, --password <password>
-                          The password for the Apple ID. 
-  --log-level <log-level> (default: info)
-  --version               Show the version.
-  -h, --help              Show help information.
+  - -b, --bundle-identifier <bundle-identifier>
+      - The bundle identifier of the target iOS app. 
+  - -e, --email <email>     
+    - The email address for the Apple ID. 
+  - -p, --password <password>
+    - The password for the Apple ID. 
+  - --log-level <log-level> (default: info)
+  - --version               Show the version.
+  - -h, --help              Show help information.
 ### 实操日志：
   ```
   ➜  IPADownloader git:(master) ./downloader.sh
