@@ -29,6 +29,12 @@
 ```
 OVERVIEW: Download (encrypted) iOS app packages from the App Store.
 
+如果遇到下面错误：
+```
+ Your Apple ID does not have a license for this app. Download the app on an iOS device to obtain a license.
+```
+现在设备上下载一个，然后再使用该脚本下载。
+
 ### shell 脚本内容
 ```
 echo "--->>> 👉️ 输入搜索名称,如：今日计划-极简青春"
