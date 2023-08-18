@@ -25,7 +25,7 @@
 - 3.如果不想一直输入账号密码，修改如下：
 
 ```
-/usr/local/bin/ipatool download -e XXX@163.com -p XXXXXXXX -b $bundleid
+ipatool auth login --emial xxx --password xx
 ```
 OVERVIEW: Download (encrypted) iOS app packages from the App Store.
 
@@ -35,20 +35,12 @@ OVERVIEW: Download (encrypted) iOS app packages from the App Store.
 ```
 现在设备上下载一个，然后再使用该脚本下载。
 
-### shell 脚本内容
+### 搜素与下载
 ```
-echo "--->>> 👉️ 输入搜索名称,如：今日计划-极简青春"
-read searchName
-/usr/local/bin/ipatool search --limit 20 $searchName
-echo "--->>> 👉️ 输入bundle id，如： com.von.TPlan"
-read bundleid
-/usr/local/bin/ipatool download -b $bundleid
-echo "--->>> 👍 下载完毕"
+ipatool search xxx
+ipatool download -b com.x.x
 ```
-### 其他用法
-```
-USAGE: ipatool download --bundle-identifier <bundle-identifier> [--email <email>] [--password <password>] [--log-level <log-level>]
-```
+
 - OPTIONS:
   - -b, --bundle-identifier <bundle-identifier>
       - The bundle identifier of the target iOS app. 
@@ -59,28 +51,7 @@ USAGE: ipatool download --bundle-identifier <bundle-identifier> [--email <email>
   - --log-level <log-level> (default: info)
   - --version               Show the version.
   - -h, --help              Show help information.
-### 实操日志：
-  ```
-  ➜  IPADownloader git:(master) ./downloader.sh
---->>> 👉️ 输入搜索名称,如：今日计划-极简青春
-今日计划-极简青春
-==> ℹ️	[Info] Searching for '今日计划-极简青春'...
-==> ℹ️	[Info] Found 1 result:
-1. 今日计划-极简青春: com.von.TPlan (2.1).
---->>> 👉️ 输入bundle id，如： com.von.TPlan
-com.von.TPlan
-==> ℹ️	[Info] Querying the iTunes Store for 'com.von.TPlan'...
-==> ⚠️	[Warning] Enter Apple ID email:
-==> ⚠️	[Warning] Enter Apple ID password:
-==> ℹ️	[Info] Authenticating with the App Store...
-==> ℹ️	[Info] Authenticated as 'Quinn Von'.
-==> ℹ️	[Info] Requesting a signed copy of '1505020317' from the App Store...
-==> ℹ️	[Info] Downloading app package... [100%]
-==> ℹ️	[Info] Saved app package to com.von.TPlan_1505020317_v2.1_529.ipa.
-==> ℹ️	[Info] Applying patches...
-==> ℹ️	[Info] Done.
---->>> 👍 下载完毕
-  ```
+
 ### 我的其他开源框架
 
 - [SpeedySwift 独立开发者必备](https://github.com/Tliens/SpeedySwift)
