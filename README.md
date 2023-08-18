@@ -16,30 +16,27 @@
 
 
 ### 使用流程 
-- 1、先执行./setup.sh 安装环境（仅需执行一次）
-- 2、执行./downloader.sh 下载
+- 执行./setup.sh 安装环境（仅需执行一次）
 
 ### 注意事项
-- 1.如果遇到权限问题 chmod +x *.sh
-- 2.如果下载失败，请更换Apple ID，可能当前账号不支持下载该App
-- 3.如果不想一直输入账号密码，修改如下：
+- 如果遇到权限问题 chmod +x *.sh
 
+### 登录苹果账号
 ```
 ipatool auth login --emial xxx --password xx
 ```
-OVERVIEW: Download (encrypted) iOS app packages from the App Store.
-
-如果遇到下面错误：
-```
- Your Apple ID does not have a license for this app. Download the app on an iOS device to obtain a license.
-```
-现在设备上下载一个，然后再使用该脚本下载。
 
 ### 搜素与下载
 ```
 ipatool search xxx
 ipatool download -b com.x.x
 ```
+
+如果遇到下面错误：
+```
+ Your Apple ID does not have a license for this app. Download the app on an iOS device to obtain a license.
+```
+现在设备上下载一个，然后再使用该脚本下载。
 
 - OPTIONS:
   - -b, --bundle-identifier <bundle-identifier>
