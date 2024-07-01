@@ -23,7 +23,7 @@
 
 ### 登录苹果账号
 ```
-ipatool auth login --emial xxx --password xx
+ipatool auth login --email xxx --password xx
 ```
 
 ### 搜素与下载
