@@ -34,7 +34,12 @@ ipatool download -b com.x.x
 
 如果遇到下面错误：
 ```
- Your Apple ID does not have a license for this app. Download the app on an iOS device to obtain a license.
+Your Apple ID does not have a license for this app. Download the app on an iOS device to obtain a license.
+
+或者：
+
+ERR error="license is required" success=false
+
 ```
 现在设备上下载一个，然后再使用该脚本下载。
 
