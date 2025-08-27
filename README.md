@@ -17,6 +17,10 @@
 
 ### 使用流程 
 - 执行./setup.sh 安装环境（仅需执行一次）
+  或者:
+```
+brew install ipatool
+```
 
 ### 注意事项
 - 如果遇到权限问题 chmod +x *.sh
