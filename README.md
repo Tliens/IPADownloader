@@ -2,6 +2,8 @@
 
 ### IPADownloader 让下载ipa变得更加方便。
 
+2025.08.27 更新，增加错误解决办法。
+
 此脚本，一键下载，减少逆向学习脑细胞的损耗。
 
 感谢大神，站在大神的肩膀上：https://github.com/majd/ipatool
